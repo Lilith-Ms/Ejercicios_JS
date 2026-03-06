@@ -284,7 +284,11 @@ function obtenerParesHasta(limite) {let pares = [];
 }
 
 // Test 16:
-function factorial(n) {
+function factorial(n) {let resultado = 1;
+
+	for (let i = 1; i <= n; i++) 
+		{resultado = resultado * i;}
+		return resultado;
 	// Recibe un número entero no negativo.
 	// Devuelve el factorial de ese número (n! = n × (n-1) × ... × 1).
 	// Ejemplo: factorial(5) → 5×4×3×2×1 = 120
