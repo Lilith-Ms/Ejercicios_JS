@@ -78,7 +78,13 @@ function obtenerDiaSemana(numero) {switch(numero)
 }
 
 // Test 5:
-function esAnioBisiesto(anio) {
+function esAnioBisiesto(anio) {if (anio % 4 === 0 && anio % 100 !== 0) 
+	{return true;}
+
+	if (anio % 400 === 0) 
+		{return true;}
+
+	return false;
 	// Recibe un número representando un año.
 	// Devuelve true si es bisiesto, false si no lo es.
 	// Regla: Es bisiesto si es divisible por 4,
