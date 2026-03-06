@@ -12,7 +12,7 @@ const nuevaString = "Ola de Mar";
 
 // Test 2
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 14;
 
 // Test 3
 // Crea una variable booleana:
