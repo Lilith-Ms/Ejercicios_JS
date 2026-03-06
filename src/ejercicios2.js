@@ -96,7 +96,22 @@ function esAnioBisiesto(anio) {if (anio % 4 === 0 && anio % 100 !== 0)
 // ██████  OPERADORES LÓGICOS Y MATEMÁTICOS ████████████████████████
 
 // Test 6:
-function validarContraseña(password) {
+function validarContraseña(password) {if (password.length < 8) 
+	{return false;}
+
+	let tieneMayuscula = false;
+	let tieneNumero = false;
+
+	for (let i = 0; i < password.length; i++) 
+		{if (password[i] >= "A" && password[i] <= "Z") 
+			{tieneMayuscula = true;}
+
+		if (password[i] >= "0" && password[i] <= "9") 
+			{tieneNumero = true;}}
+
+	if (tieneMayuscula && tieneNumero) 
+		{return true;} 
+		else {return false;}
 	// Recibe un string con una contraseña.
 	// Devuelve true si cumple TODAS estas condiciones:
 	// - Tiene al menos 8 caracteres
