@@ -238,7 +238,12 @@ function contarVocales(texto) {let contador = 0;
 }
 
 // Test 13:
-function formatearNombre(nombre, apellido, mayusculas) {
+function formatearNombre(nombre, apellido, mayusculas) {if (mayusculas === true)
+	 {return nombre.toUpperCase() + " " + apellido.toUpperCase();} 
+		else 
+		{let n = nombre[0].toUpperCase() + nombre.slice(1).toLowerCase();
+		let a = apellido[0].toUpperCase() + apellido.slice(1).toLowerCase();
+		return n + " " + a;
 	// Recibe: nombre (string), apellido (string), mayusculas (boolean)
 	// Devuelve el nombre completo formateado:
 	// - Si mayusculas es true: "NOMBRE APELLIDO"
@@ -246,7 +251,7 @@ function formatearNombre(nombre, apellido, mayusculas) {
 	// Ejemplo: formatearNombre("juan", "perez", true) → "JUAN PEREZ"
 	// Ejemplo: formatearNombre("juan", "perez", false) → "Juan Perez"
 	// Tu código:
-}
+}}
 
 // ██████  BUCLES BÁSICOS ████████████████████████
 
