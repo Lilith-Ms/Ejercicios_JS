@@ -143,7 +143,9 @@ function calcularIMC(peso, altura) {let imc = peso / (altura * altura);
 }
 
 // Test 8:
-function esMultiplo(num1, num2) {
+function esMultiplo(num1, num2) {if (num1 % num2 === 0 || num2 % num1 === 0) 
+	{return true;} 
+	else {return false;}
 	// Recibe dos números enteros.
 	// Devuelve true si num1 es múltiplo de num2 o viceversa.
 	// Ejemplo: esMultiplo(10, 5) → true, esMultiplo(7, 3) → false
