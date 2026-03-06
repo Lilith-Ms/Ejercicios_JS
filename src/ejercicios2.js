@@ -256,7 +256,12 @@ function formatearNombre(nombre, apellido, mayusculas) {if (mayusculas === true)
 // ██████  BUCLES BÁSICOS ████████████████████████
 
 // Test 14:
-function sumarHasta(limite) {
+function sumarHasta(limite) {let suma = 0;
+
+	for (let i = 1; i <= limite; i++) 
+		{suma = suma + i;}
+
+	return suma;
 	// Recibe un número entero positivo.
 	// Devuelve la suma de todos los números desde 1 hasta ese límite (inclusive).
 	// Ejemplo: sumarHasta(5) → 1+2+3+4+5 = 15
